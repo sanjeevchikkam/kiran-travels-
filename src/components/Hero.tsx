@@ -4,16 +4,16 @@ import hero1 from "@/assets/hero-1.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpeg";
 import hero4 from "@/assets/hero-4.jpeg";
-import hero5 from "@/assets/hero-5.jpg";
+import hero5 from "@/assets/hero-5.jpeg";
 
-const slides = [hero1, hero3, hero2, hero4, hero5];
+const slides = [hero5, hero3, hero2, hero4, hero1];
 const WA = "https://wa.me/919391378889?text=Hi%2C%20I%20want%20to%20rent%20a%20car";
 const TEL = "tel:+919391378889";
 
 export function Hero() {
   const [i, setI] = useState(0);
   useEffect(() => {
-    const t = setInterval(() => setI((p) => (p + 1) % slides.length), 5000);
+    const t = setInterval(() => setI((p) => (p + 1) % slides.length), 4000);
     return () => clearInterval(t);
   }, []);
 

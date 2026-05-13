@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Car, Route, Calendar, Smile } from "lucide-react";
 
 const stats = [
-  { icon: Car, value: 5, suffix: "", label: "Cars Available" },
-  { icon: Route, value: 500, suffix: "+", label: "Total Trips" },
-  { icon: Calendar, value: 3, suffix: "+", label: "Years Experience" },
-  { icon: Smile, value: 300, suffix: "+", label: "Happy Customers" },
+  { icon: Car, value: 6, suffix: "", label: "Cars Available" },
+  { icon: Route, value: 800, suffix: "+", label: "Total Trips" },
+  { icon: Calendar, value: 7, suffix: "+", label: "Years Experience" },
+  { icon: Smile, value: 500, suffix: "+", label: "Happy Customers" },
 ];
 
 function Counter({ end, suffix }: { end: number; suffix: string }) {

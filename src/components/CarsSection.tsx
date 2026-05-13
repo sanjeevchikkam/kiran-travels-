@@ -8,16 +8,16 @@ import car5 from "@/assets/car-5.jpeg";
 import car6 from "@/assets/car-6.jpeg";
 
 const cars = [
-  { name: "Hyundai i20", tag: "Self Drive Available", image: car1 },
-  { name: "Maruti Ertiga", tag: "Driver Included", image: car2 },
-  { name: "Toyota Innova Crysta", tag: "Driver Included", image: car3 },
-  { name: "Maruti Ertiga (White)", tag: "Self Drive Available", image: car4 },
-  { name: "Maruti Swift", tag: "Events & Weddings", image: car5 },
-  { name: "Fronz", tag: "Events and Weddings", image: car6}
+  { name: "Hyundai i20", tag: "2800 rs", image: car1, },
+  { name: "Maruti Ertiga", tag: "3000 rs", image: car2 },
+  { name: "Toyota Innova Crysta", tag: "4500 rs", image: car3 },
+  { name: "Maruti Ertiga (White)", tag: "3000 rs", image: car4 },
+  { name: "Maruti Swift", tag: "2500 rs", image: car5 },
+  { name: "Fronz", tag: "2800 rs", image: car6}
 ];
 
 const wa = (name: string) =>
-  `https://wa.me/919391378889?text=${encodeURIComponent(`Hi, I want to book ${name} from Kiran Travels`)}`;
+  `https://wa.me/919391378889?text=${encodeURIComponent(`Hi, I want to book ${name}, Let me know the Avilability`)}`;
 
 export function CarsSection() {
   const ref = useReveal<HTMLDivElement>();
@@ -29,6 +29,7 @@ export function CarsSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-navy">Our Fleet</h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
             Five well-maintained vehicles ready for self-drive, driver service, or special events.
+            Prices for 24 hrs
           </p>
         </div>
 
